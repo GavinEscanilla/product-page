@@ -61,7 +61,7 @@ body{
    color: #DE272C;
  }
  #form{
-   margin-top: 139px;
+   margin-top: 136px;
    display: flex;
    padding: 20px;
    font-size: 1.5rem;
@@ -74,6 +74,9 @@ body{
     background-size:cover;
       background-position: center center;
  }
+ #form h1{
+   color: #000;
+ }  
 
  #email{
    width: 25rem;
