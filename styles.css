@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+@font-face{
+  font-family: 'ROG';
+  src: url('ASUSROG_REGULAR.TTF');
+}
 body, html{
   scroll-padding-top: 10rem;
 }
@@ -66,7 +70,7 @@ body{
    padding: 20px;
    font-size: 1.5rem;
    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
     background-image: url("https://dlcdnwebimgs.asus.com/files/media/C03ED571-0D4B-47B3-90B0-BEF72BB26C05/v1/images/large/1x/pic_kv.webp");
@@ -74,10 +78,29 @@ body{
     background-size:cover;
       background-position: center center;
  }
- #form h1{
-   color: #000;
- }  
-
+  
+ .product-name{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:20px;
+ }
+ .product-name h1{
+  color: #F3F3F3;
+  font-family: 'ROG', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 5rem;
+ }
+.product-name p{
+  color: #0FF;
+}
+.form-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
  #email{
    width: 25rem;
    height: 2rem;
