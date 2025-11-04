@@ -10,13 +10,13 @@ body, html{
   scroll-padding-top: 10rem;
 }
 body{
-   scroll-padding-top: 55px;
   display: grid;
-  grid-template-columns: 100vw;
+  grid-template-columns: 100%;
   grid-template-rows:  100vh 100vh 100vh;
   font: 15px Arial, sans-serif;
  background-color: #525152;
- overflow-x: hidden;
+ overflow-x: scroll;
+ max-width: 100%;
 }
 #header{
   position: fixed;
