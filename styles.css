@@ -14,7 +14,8 @@ html {
 body {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100vh 100vh 100vh;
+  grid-template-rows: 100vh;
+  grid-template-areas: "form" "features" "How" "Pricing";
   font: 15px Arial, sans-serif;
   background-color: #525152;
   max-width: 100%;
@@ -70,8 +71,10 @@ a:active {
   color: #de272c;
 }
 #form {
+  box-sizing: border-box;
   margin-top: 136px;
   display: flex;
+  grid-area: form;
   padding: 20px;
   font-size: 1.5rem;
   flex-direction: column;
@@ -138,7 +141,9 @@ a:active {
   height: fit-content;
 }
 #features {
+  box-sizing: border-box;
   display: flex;
+  grid-area: features;
   flex-direction: column;
   background-color: #000;
   gap: 20px;
@@ -174,6 +179,20 @@ a:active {
   color: #f3f3f3;
   border-radius: 40px;
   border: none;
+}
+#How{
+  display: flex;
+  grid-area: How;
+  width: 100%;
+  height: 100vh;
+  background-color: #00ffff;
+}
+#Pricing{
+  display: flex;
+  grid-area: Pricing;
+  width: 100%;
+  height: 100vh;
+  background-color: #ff2424;
 }
 @media only screen and (max-width: 436px) {
   #header {
