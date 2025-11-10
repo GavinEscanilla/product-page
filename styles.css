@@ -50,12 +50,12 @@ body {
 
 #nav-bar {
   display: flex;
-  flex: 1;
   justify-content: flex-end;
   align-items: center;
   gap: clamp(10px, 5vw, 100px);
-  padding-right: clamp(10px, 4vw, 40px);
-  width: 50%;
+  width: 100%;
+  box-sizing: border-box;
+ padding-right: clamp(10px, 4vw, 40px);
   min-width: 0;
   font-size: 2rem;
 }
