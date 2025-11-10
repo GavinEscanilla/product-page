@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  /* background: gray !important; */
+  /* color: #0f0 !important; */
+  /* outline: 1px solid red !important; */
 }
 @font-face {
   font-family: "ROG";
@@ -10,7 +13,7 @@
 body,
 html {
   scroll-padding-top: 12rem;
-  overflow-x: hidden;
+ /* overflow-x: hidden; */
 }
 body {
   display: grid;
@@ -102,13 +105,16 @@ a:active {
 }
 .form-content {
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
+
 #email {
-  width: 25rem;
+  max-width: 100%;
+  width: 300px;
   height: 2rem;
   text-align: center;
 }
@@ -154,10 +160,11 @@ a:active {
 }
 #feature-names ul {
   grid-area: ul;
-  padding: 20px;
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: clamp(10px, 5vw, 100px);
   font-size: 2.5rem;
   align-items: center;
