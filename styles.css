@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* background: gray !important; */
+  /* background: lightgray !important; */
   /* color: #0f0 !important; */
   /* outline: 1px solid red !important; */
 }
@@ -13,16 +13,17 @@
 body,
 html {
   scroll-padding-top: 12rem;
- /* overflow-x: hidden; */
+  /* overflow-x: hidden; */
 }
 body {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(4, 100dvh);
+  grid-template-rows: repeat(4, minmax(100vh, auto));
   font: 15px Arial, sans-serif;
   background-color: gray;
   max-width: 100%;
 }
+
 #header {
   position: fixed;
   display: flex;
@@ -59,7 +60,7 @@ body {
   gap: clamp(10px, 5vw, 100px);
   width: 100%;
   box-sizing: border-box;
-/* padding-right: clamp(10px, 4vw, 40px); */
+  /* padding-right: clamp(10px, 4vw, 40px); */
   min-width: 0;
   font-size: 2rem;
 }
@@ -148,6 +149,8 @@ a:active {
 }
 #features {
   display: flex;
+  max-width: 100%;
+  height: 100%;
   flex-direction: column;
   background-color: #000;
   color: #f3f3f3;
@@ -158,15 +161,17 @@ a:active {
   grid-template-areas: "ul ul ul" ". input .";
   grid-auto-rows: min-content;
   justify-items: center;
+  padding-top: 20px;
+  padding-bottom: 0;
   gap: 100px;
 }
 #feature-names ul {
   grid-area: ul;
-  width: 100%; 
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: center;
- flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: clamp(10px, 5vw, 100px);
   font-size: 2.5rem;
   align-items: center;
@@ -174,9 +179,7 @@ a:active {
 #feature-names ul li img {
   width: 8rem;
 }
-#feature-names .submit-container {
-  margin-bottom: 150px;
-}
+
 #feature-names input {
   background-color: #000;
   width: 15rem;
@@ -186,15 +189,35 @@ a:active {
   border-radius: 40px;
   border: none;
 }
+
+.feature-content {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  list-style: circle;
+  list-style-position: inside;
+}
+.feature-content li {
+  display: flex;
+  flex: 1 1 33.33%;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  font-size: 1.5rem;
+}
 #How {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
   background-color: #00ffff;
 }
 #Pricing {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
   background-color: #ff2424;
 }
@@ -206,7 +229,8 @@ a:active {
     align-items: center;
   }
   #features {
-    gap: 60px;
+    display: flex;
+    flex-direction: column;
   }
   #feature-names {
     grid-template-columns: 1fr;
@@ -223,7 +247,11 @@ a:active {
     font-size: 2rem;
     align-items: center;
   }
+  #feature-names .submit-container {
+    margin-bottom: 0;
+  }
 }
+
 @media only screen and (max-width: 900px) {
   #header {
     flex-direction: column;
