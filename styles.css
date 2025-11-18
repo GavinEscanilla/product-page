@@ -202,6 +202,7 @@ a:active {
 }
 .feature-content li {
   display: flex;
+  justify-content: center;
   flex: 1 1 33.33%;
   box-sizing: border-box;
   flex-direction: column;
@@ -246,6 +247,18 @@ a:active {
     gap: 20px;
     font-size: 2rem;
     align-items: center;
+  }
+  .feature-content {
+    flex-direction: column;
+  }
+  .feature-content li {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+    font-size: 1.5rem;
   }
   #feature-names .submit-container {
     margin-bottom: 0;
