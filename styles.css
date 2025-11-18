@@ -12,7 +12,7 @@
 
 body,
 html {
-  scroll-padding-top: 12rem;
+  scroll-padding-top: 6rem;
   /* overflow-x: hidden; */
 }
 body {
@@ -214,14 +214,34 @@ a:active {
   display: flex;
   max-width: 100%;
   height: 100vh;
-  background-color: #00ffff;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+#How iframe {
+  width: 50%;
+  height: 50%;
 }
 #Pricing {
   display: flex;
   max-width: 100%;
   height: 100vh;
-  background-color: #ff2424;
+  background-color: #000;
 }
+ #Pricing ul{
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  height: 100vh
+ }
+ #Pricing ul .Price-options{
+   width: 30%;
+   height: 50%;
+   border: 1px solid #fff;
+ }
 @media only screen and (max-width: 436px) {
   #form {
     background-color: #000;
