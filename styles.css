@@ -20,7 +20,7 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, minmax(100vh, auto));
   font: 15px Arial, sans-serif;
-  background-color: gray;
+  background-color: #000;
   max-width: 100%;
   min-height: 100vh;
 }
