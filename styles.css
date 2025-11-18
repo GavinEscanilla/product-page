@@ -22,6 +22,7 @@ body {
   font: 15px Arial, sans-serif;
   background-color: gray;
   max-width: 100%;
+  min-height: 100vh;
 }
 
 #header {
