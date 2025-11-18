@@ -203,7 +203,7 @@ a:active {
 .feature-content li {
   display: flex;
   justify-content: center;
-  flex: 1 1 33.33%;
+  flex: 1 1 40rem;
   box-sizing: border-box;
   flex-direction: column;
   gap: 20px;
@@ -213,7 +213,7 @@ a:active {
 #How {
   display: flex;
   max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   background-color: #000;
@@ -224,24 +224,38 @@ a:active {
 }
 #Pricing {
   display: flex;
+  flex-direction: column;
   max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #000;
 }
- #Pricing ul{
+#Pricing ul {
   display: flex;
   max-width: 100%;
+  flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  list-style: none;
+  align-content: center;
   gap: 20px;
-  height: 100vh
- }
- #Pricing ul .Price-options{
-   width: 30%;
-   height: 50%;
-   border: 1px solid #fff;
- }
+  padding: 20px;
+  height: 100%;
+}
+#Pricing ul .Price-options {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+  color: #fff;
+  width: 25rem;
+  height: 25rem;
+  border: 1px solid #fff;
+}
 @media only screen and (max-width: 436px) {
   #form {
     background-color: #000;
@@ -274,7 +288,6 @@ a:active {
   .feature-content li {
     display: flex;
     box-sizing: border-box;
-    flex-direction: column;
     flex: 1;
     gap: 20px;
     padding: 20px;
@@ -282,6 +295,10 @@ a:active {
   }
   #feature-names .submit-container {
     margin-bottom: 0;
+  }
+  #How iframe {
+    width: 15rem;
+    height: 15rem;
   }
 }
 
